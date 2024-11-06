@@ -1,0 +1,48 @@
+/* Style pour le widget de connexion */
+.zone-connexion-widget {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Style pour le lien de connexion */
+.login-link {
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-link:hover {
+    background-color: #45a049;
+}
+
+/* Style pour le message "Vous êtes déjà connecté" */
+.user-logged-in {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style pour le lien de déconnexion */
+.logout-link {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+background: var(--red);
+}
+
+.logout-link:hover {
+    background-color: #d32f2f;
+}

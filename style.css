@@ -1,0 +1,46 @@
+/*
+Theme Name: VRATE
+Theme URI: https://monurlpersonnel.com/mesthemes
+Author: Axel DUTRIEUX
+Author URI: https://monurlpersonnel.com
+Description: Ce thème permet la création du site de VRATE
+Version: 0.1
+Tags: simple, facile, sans danger, base pour la suite
+*/
+
+@import './assets/css/header.css';
+@import './assets/css/index.css';
+@import './assets/css/variables/normalize.css';
+@import './assets/css/equipe.css';
+@import './assets/css/widget.css';
+@import './assets/css/singleequipe.css';
+@import './assets/css/match.css';
+@import './assets/css/singlematch.css';
+@import './assets/css/connexion.css';
+@import './assets/css/profil.css';
+
+
+@font-face {
+    font-family: 'd-din'; /* Remplacez par le nom que vous souhaitez donner à la police */
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/d-din.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Colors */
+    --black: #111111;
+    --blue: #0F1923;
+    --red: #FF4655;
+    --white: #ECE8E0;
+    --purwhite: #FFFFFF;
+
+    /* Fonts */
+    --font-title: 'D-DINCondensed';
+    --font-size-title: 32px;
+    --font-body: 'D-DIN';
+    --font-size-body: 14px;
+    --font-header2: 'D-DIN';
+    --font-size-header2: 20px;
+    --font-size-team_name: 24px;
+} 

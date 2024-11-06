@@ -1,0 +1,62 @@
+/* Wrapper pour le header */
+.header-wrapper {
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    background-color: var(--black);
+}
+
+/* Styles pour le conteneur du header */
+.site-header {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Navigation du menu dans le header */
+.header-nav {
+    flex-grow: 1;
+}
+
+/* Navigation du menu dans le header */
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style pour la liste du menu */
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style pour chaque élément du menu */
+.header-menu li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Style pour chaque lien du menu */
+.header-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: var(--font-size-team_name);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Couleur de fond au survol */
+.header-menu a:hover {
+    color: var(--red);
+}
+

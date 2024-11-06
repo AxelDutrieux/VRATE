@@ -1,0 +1,157 @@
+
+.index{
+    background-color: var(--blue);
+}
+
+:root {
+    --black: #1a1a1a; /* Couleur de fond de saturation */
+    --blue: #007CC7; /* Couleur en screen */
+    --red: #D7263D; /* Couleur en multiply */
+}
+
+.index-home {
+    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/index_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+/* Couche de saturation avec la couleur noire */
+.index-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    mix-blend-mode: saturation; /* Applique le mode de fusion de saturation */
+    z-index: 1;
+}
+
+/* Couche de screen avec la couleur bleue */
+.index-home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    mix-blend-mode: screen; /* Mode de fusion screen pour un effet lumineux */
+    z-index: 2;
+}
+
+/* Couche multiply avec la couleur rouge */
+.index-home-multiply {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    mix-blend-mode: multiply; /* Applique le mode de fusion multiply */
+    z-index: 3;
+    pointer-events: none; /* Assure que cette couche n'interfère pas avec les interactions */
+}
+
+
+.index-title {
+    color: #FFF;
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 4;
+    margin-bottom: 20px;
+    margin-left: 50px; 
+    text-align: left; 
+    position: relative;
+}
+
+.index-button {
+    display: flex;
+    width: 208px;
+    height: 52px;
+    padding: 8px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--red);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 4;
+    position: relative;
+}
+.index-button-text{
+color: var(--white);
+font-family: var(--font-title);
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.index-button:hover{
+    background: var(--white);
+    color: var(--red);
+}
+
+.index-intro-title{
+    color: var(--white);
+font-family: var(--font-title);
+font-size: var(--font-size-title)
+}
+
+.index-intro-h2{
+    color: var(--white);
+font-family: var(--font-header2);
+font-size: var(--font-size-header2);
+font-weight: var(--font-weight-header2);
+}
+
+.index-intro-body{
+    color: var(--white);
+font-family: var(--font-body);
+font-size: var(--font-size-body);
+}
+
+.index-intro {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--blue); /* Fond sombre pour le texte explicatif */
+    border-radius: 8px;
+}
+
+.index-intro-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.index-intro-h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.index-intro-body {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 10px 0;
+}

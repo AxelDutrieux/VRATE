@@ -1,0 +1,99 @@
+/* Style global de la page de connexion */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4; /* Couleur de fond douce */
+    font-family: Arial, sans-serif;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Style du formulaire */
+.login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #4CAF50; /* Changement de couleur au focus */
+    outline: none;
+}
+
+/* Style pour le bouton de soumission */
+.login-input-submit {
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.login-input-submit:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+
+/* Lien mot de passe oublié */
+a {
+    text-align: center;
+    margin-top: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style si l'utilisateur est déjà connecté */
+.login-page p {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.login-page p a {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.login-page p a:hover {
+    text-decoration: underline;
+}

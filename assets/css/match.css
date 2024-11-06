@@ -1,0 +1,125 @@
+/* Assurez-vous que le html et le body prennent toute la hauteur */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* .archive-match occupe toute la hauteur de la page */
+.archive-match {
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+    align-items: center; /* Centre les cartes horizontalement */
+}
+
+/* .match-card prend toute la largeur disponible de .archive-match */
+.match-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Prend toute la largeur de son conteneur */
+    max-width: 90%; /* Garde un peu de marge pour les bords de la page */
+    gap: 1%;
+    margin-bottom: 2rem; /* Espacement entre les cartes */
+    padding: 2rem; /* Ajoute du padding pour donner de l'espace interne */
+    background-color: var(--card-background); /* Optionnel : couleur de fond */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de carte */
+    border-radius: 8px; /* Arrondit les coins */
+}
+
+/* .match-infos en grille, occupant la largeur de la carte */
+.match-infos {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes égales */
+    justify-items: center;
+    width: 100%;
+    padding-top: 1rem; /* Un peu d'espace au-dessus de la grille */
+}
+
+/* Style du score du match */
+.match-score {
+    font-family: var(--font-title);
+    color: var(--white);
+    font-size: 50px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Taille de l'image du logo du match */
+.match-logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Espacement des éléments dans groupe5 */
+.groupe5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Style de la ligne blanche (hr) */
+.white-line {
+    border: none;
+    border-top: 2px solid var(--white);
+    width: 100%;
+    margin: 1% 0;
+}
+
+/* Style du lien couvrant toute la carte */
+.match-card-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.match-card-title {
+    margin-left: -73rem; /* Déplace le titre légèrement vers la gauche */
+    margin-top: 0;
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.archive-match-banner {
+    position: relative;
+    background-image: url('assets/img/index_background.jpg'); /* Chemin relatif vers l'image */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.archive-match-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Ombre pour le texte pour le rendre plus lisible */
+}

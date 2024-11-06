@@ -1,0 +1,233 @@
+/* Section principale */
+.single-match-total {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Padding réduit sur les grands écrans */
+    box-sizing: border-box;
+}
+
+/* Conteneur central */
+.single-match-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 90%; /* Légèrement réduit pour les marges sur mobile */
+    max-width: 900px;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre principal */
+.single-match-title {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: calc(var(--font-size-title) + 4px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Sous-titre (SCORE) */
+.single-match-header2 {
+    color: var(--white);
+    font-family: var(--font-header2);
+    font-size: calc(var(--font-size-header2) + 2px);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Zone de score avec grille */
+.single-match-score {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Style pour le conteneur "frame12" */
+.frame12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    margin-bottom: 2rem;
+}
+
+/* Logo des équipes dans le score */
+.match-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.match-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Style du score entre les logos */
+.match-score {
+    font-family: var(--font-title);
+    color: var(--white);
+    font-size: calc(var(--font-size-title) + 4px);
+    font-weight: bold;
+}
+
+/* Zone MVP */
+.single-page-mvp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+/* Titre pour la section MVP */
+.single-page-mvp-title {
+    color: var(--white);
+    font-family: var(--font-header2);
+    font-size: calc(var(--font-size-header2) + 2px);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Conteneur des infos MVP */
+.single-page-mvp-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 1rem;
+    max-width: 300px;
+}
+
+/* Style de l'avatar MVP */
+.author-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+/* Nom et description du MVP */
+.author-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0.5rem 0;
+}
+
+.author-box p {
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+
+/* Espacement autour du texte principal */
+.single-match-content {
+    color: var(--light-gray);
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+/* Media Queries */
+
+/* Tablettes */
+@media (max-width: 768px) {
+    .single-match-total {
+        padding: 1.5rem; /* Padding réduit pour les tablettes */
+    }
+
+    .single-match-page {
+        width: 85%;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .single-match-title, .single-match-header2 {
+        font-size: calc(var(--font-size-title) + 2px);
+    }
+    
+    .match-logo {
+        width: 60px;
+    }
+    
+    .match-score {
+        font-size: calc(var(--font-size-title) + 2px);
+    }
+    
+    .single-page-mvp-infos {
+        padding: 0.8rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .single-match-total {
+        padding: 1rem; /* Padding réduit pour les smartphones */
+    }
+
+    .single-match-page {
+        width: 95%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .single-match-title, .single-match-header2 {
+        font-size: var(--font-size-header2);
+        text-align: center;
+    }
+
+    .match-logo {
+        width: 50px;
+    }
+
+    .match-score {
+        font-size: var(--font-size-header2);
+    }
+
+    .single-page-mvp-title {
+        font-size: var(--font-size-header2);
+    }
+
+    .single-page-mvp-infos {
+        padding: 0.5rem;
+        max-width: 90%;
+    }
+    
+    .author-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .author-box h3 {
+        font-size: 1rem;
+    }
+
+    .author-box p {
+        font-size: 0.9rem;
+    }
+}
